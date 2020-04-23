@@ -1,4 +1,4 @@
-BUILD_DIR = build
+﻿BUILD_DIR = build
 PCAP_DIR = pcaps
 LOG_DIR = logs
 
