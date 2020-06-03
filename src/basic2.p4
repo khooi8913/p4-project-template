@@ -80,7 +80,7 @@ control MyIngress(inout headers hdr,
         mark_to_drop(standard_metadata);
     }
     
-    action ip_forward(macAddr_t dstAddr, egressSpec_t port) {
+    action ipv4_forward(macAddr_t dstAddr, egressSpec_t port) {
         /* TODO: fill out code in action body */
     }
     
