@@ -20,9 +20,9 @@ endif
 DEFAULT_JSON = $(BUILD_DIR)/$(DEFAULT_PROG:.p4=.json)
 
 # Define NO_P4 to start BMv2 without a program
-ifndef NO_P4
-run_args += -j $(DEFAULT_JSON)
-endif
+# ifndef NO_P4
+# run_args += -j $(DEFAULT_JSON)
+# endif
 
 # Set BMV2_SWITCH_EXE to override the BMv2 target
 ifdef BMV2_SWITCH_EXE

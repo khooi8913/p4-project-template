@@ -180,7 +180,7 @@ class ExerciseRunner:
                 os.mkdir(dir_name)
         self.log_dir = log_dir
         self.pcap_dir = pcap_dir
-        self.switch_json = switch_json
+        # self.switch_json = switch_json
         self.bmv2_exe = bmv2_exe
 
 
@@ -245,7 +245,7 @@ class ExerciseRunner:
 
         defaultSwitchClass = configureP4Switch(
                                 sw_path=self.bmv2_exe,
-                                json_path=self.switch_json,
+                                # json_path=self.switch_json,
                                 log_console=True,
                                 pcap_dump=self.pcap_dir)
 
@@ -335,11 +335,11 @@ class ExerciseRunner:
         print('and your initial runtime configuration is loaded. You can interact')
         print('with the network using the mininet CLI below.')
         print('')
-        if self.switch_json:
-            print('To inspect or change the switch configuration, connect to')
-            print('its CLI from your host operating system using this command:')
-            print('  simple_switch_CLI --thrift-port <switch thrift port>')
-            print('')
+        # if self.switch_json:
+        #     print('To inspect or change the switch configuration, connect to')
+        #     print('its CLI from your host operating system using this command:')
+        #     print('  simple_switch_CLI --thrift-port <switch thrift port>')
+        #     print('')
         print('To view a switch log, run this command from your host OS:')
         print('  tail -f %s/<switchname>.log' %  self.log_dir)
         print('')

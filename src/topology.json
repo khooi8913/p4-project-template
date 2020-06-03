@@ -6,9 +6,10 @@
                "commands":["arp -i eth0 -s 10.0.1.1 08:00:00:00:01:11"]}
     },
     "switches": {
-        "s1": { "runtime_json" : "s1-runtime.json" }
+        "s1": { "runtime_json" : "s1-runtime.json" },
+        "s2": { "runtime_json" : "s2-runtime.json" }
     },
     "links": [
-        ["h1", "s1-p1"], ["s1-p2", "h2"]
+        ["h1", "s1-p1"], ["s1-p2", "s2-p2"], ["s2-p1", "h2"]
     ]
 }
